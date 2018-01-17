@@ -1,10 +1,10 @@
 <h1>Front End Bootstrap</h1>
 
 <h2>Includes</h2>
-- CSS modules
-- redux
-- redux-sagas
-- react-router
+- CSS modules<br/>
+- redux<br/>
+- redux-sagas<br/>
+- react-router<br/>
 
 Along with basic examples for authorized routing, and form validation.
 
