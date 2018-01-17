@@ -1,7 +1,9 @@
-export default(state = {
+import { fromJS } from 'immutable';
+
+export default(state = fromJS({
   currentUser: {},
   isLoggedIn: true
-}, payload) => {
+}), payload) => {
   switch (payload.type) {
     case 'GET_USER_SUCCESS':
       return state.currentUser = payload.user;
