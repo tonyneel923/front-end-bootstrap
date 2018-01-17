@@ -37,16 +37,16 @@ class Registration extends Component {
 
   errorValidator = ( values ) => {
     const validateFirstName = ( firstName ) => {
-      return firstName && firstName.length < 2 ? 'Last name must be longer than 2 characters.' : null;
+      return !firstName || firstName.length < 2 ? 'Last name must be longer than 2 characters.' : null;
     };
     const validateLastName = ( lastName ) => {
-      return lastName && lastName.length < 2 ? 'Last name must be longer than 2 characters.' : null;
+      return !lastName || lastName.length < 2 ? 'Last name must be longer than 2 characters.' : null;
     };
     const validateGender = ( gender ) => {
       return !gender ? 'Gender is required.' : null;
     };
     const validateBio = ( bio ) => {
-      return bio && bio.replace(/s+/g, ' ').trim().split(' ').length < 5 ? 'Bio should be more than 5 characters.' : null;
+      return !bio || bio.replace(/s+/g, ' ').trim().split(' ').length < 5 ? 'Bio should be more than 5 characters.' : null;
     };
 
     const validateEmail = (email) => {
