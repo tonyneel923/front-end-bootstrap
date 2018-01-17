@@ -5,7 +5,7 @@
 
 // default config. Keys are environment variables. e.g. REACT_APP_SOME_VAR
 
-const baseUrl = 'http://localhost:8000';
+const baseUrl = 'https://localhost';
 
 export default {
   REACT_APP_VERSION: process.env.REACT_APP_VERSION,
