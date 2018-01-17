@@ -25,7 +25,7 @@ class AuthorizedRoute extends React.Component {
 const mapStateToProps = () => {
   return (state, props) => {
     return {
-      isLoggedIn: state.users.isLoggedIn,
+      isLoggedIn: state.users.get('isLoggedIn'),
       // add pending for loading logic
     };
   };
