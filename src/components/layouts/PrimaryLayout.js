@@ -11,9 +11,9 @@ const PrimaryLayout = ({ match }) => (
     <PrimaryHeader />
     <div>
       <Switch>
-        <Route path={`${match.path}`} exact component={HomePage} />
-        <Route path={`${match.path}users`} component={UserSubLayout} />
-        <Redirect to={`${match.url}`} />
+        <Route path={'/'} exact component={HomePage} />
+        <Route path={'/users'} component={UserSubLayout} />
+        <Redirect to={'/'} />
       </Switch>
     </div>
   </div>
