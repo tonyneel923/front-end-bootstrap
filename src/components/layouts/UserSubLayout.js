@@ -8,7 +8,7 @@ const UserSubLayout = ({ match }) => (
   <div>
     <div>
       <Switch>
-        <Route path={`${match.path}:userId`}  component={UserProfilePage} />
+        <Route path={'/users/:userId'}  component={UserProfilePage} />
       </Switch>
     </div>
   </div>

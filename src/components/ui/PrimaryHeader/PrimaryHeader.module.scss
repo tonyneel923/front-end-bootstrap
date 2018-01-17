@@ -1,0 +1,12 @@
+.nav {
+  display: flex;
+  background-color: #aef;
+}
+
+.navItem {
+  flex: 1;
+}
+
+.active {
+  color: red;
+}
