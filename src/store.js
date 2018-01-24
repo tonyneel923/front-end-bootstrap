@@ -16,7 +16,7 @@ export function getStore() {
 // For Redux DevTools: https://github.com/zalmoxisus/redux-devtools-extension#usage
 const composeEnhancers =
   window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
-    ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({ name: 'Odyssey Main App'})
+    ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({ name: 'front-end-bootstrap'})
     : compose;
 
 export default(initialState) => {
